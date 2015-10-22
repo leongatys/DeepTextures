@@ -8,7 +8,7 @@ The IPythonNotebook Example.ipynb contains the code to synthesise the pebble tex
 * The images in the paper were generated using a normalised version of the [19-layer VGG-Network](http://www.robots.ox.ac.uk/~vgg/research/very_deep/)
 described in the work by [Simonyan and Zisserman](http://arxiv.org/abs/1409.1556). The weights in the normalised network are scaled
 such that the mean activation of each filter over images and positions is equal to 1.
-The normalised network can be downloaded [here](www.bethgelab.org) and has to be copied into the Models/ folder.
+**The normalised network can be downloaded [here](www.bethgelab.org) and has to be copied into the Models/ folder.**
 
 # Disclaimer
 This software is published for academic and non-commercial use only. 
