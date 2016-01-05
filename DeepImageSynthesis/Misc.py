@@ -183,7 +183,7 @@ def load_image(file_name, im_size, net_model, net_weights, mean, show_img=False)
     data[5] = "input_dim: %i\n" %(im_size[1])
     with open(net_model,'r+') as f:
         f.writelines(data)
-    net_mean =  np.tile(mean[:,None,None],(1,) + im_size-1)
+    net_mean =  np.tile(mean[:,None,None],(1,) + tuple(im_size.astype(int)))
     #load pretrained network
     net = caffe.Classifier( 
     net_model, net_weights,
